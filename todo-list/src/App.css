@@ -1,0 +1,217 @@
+body {
+  background-color: rgb(102, 110, 78);
+}
+
+.App {
+  border: 1px solid #322f2f;
+  margin: 30px 30% 100px;
+  padding: 50px;
+  text-align: center;
+  border-radius: 25px;
+  background-color: #aeb58f;
+}
+
+.App h2 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.App input {
+  height: 40px;
+  width: 250px;
+  border-radius: 20px;
+  border: none;
+  background-color: #fff3f3;
+  color: #000;
+  font-size: 18px;
+  outline: none;
+  margin: 5px;
+  padding-left: 20px;
+}
+
+.App input::placeholder {
+  color: #ccc;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.App button {
+  height: 40px;
+  width: 70px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f82121;
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.App ul {
+  list-style-type: "⬜"; 
+  padding: 0;
+  margin: 0;
+}
+
+.App ul li {
+  overflow-wrap: break-word;
+  width: 250px;
+  text-align: left;
+  padding-left: 10px;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #e5f0b4;
+  margin-bottom: 10px;
+}
+
+.diffStyle {
+  text-decoration: line-through; 
+  list-style: "✅";
+}
+
+.div10 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.App button:active {
+  background-color: #333;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(102, 110, 78);
+  color: #f7db81;
+  text-align: center;
+  font-weight: bold;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #3321f8;
+}
+
+.message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.by {
+  color: #fcfcfc;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.filter-buttons {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.filter-buttons button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background-color: #818760;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 200px;
+  height: 50px;
+}
+
+.filter-buttons button:hover {
+  background-color: #e5f0b4;
+}
+
+.active-filter {
+  background-color: #f82121;
+  color: white;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .App {
+    margin: 30px 10% 100px;
+    padding: 30px;
+  }
+
+  .App input, .App button, .App ul li {
+    width: 90%;
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+  }
+
+  .filter-buttons button {
+    width: 100%;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 20px;
+  }
+
+  .App input {
+    width: 60%;
+    margin: auto;
+    margin-right: 5px;
+  }
+
+  .App .btn {
+    width: 20%;
+  }
+
+  .App ul li {
+    width: 60%;
+    padding: 5px;
+    margin: auto;
+  }
+  .App ul{
+    margin-left: 10px;
+  }
+
+  .div10 {
+    gap: 10px;
+  }
+
+  .footer {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+.spano{
+  font-size: 10px;
+  color: #fcfcfc;
+}
